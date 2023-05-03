@@ -1,4 +1,4 @@
-import CollectionImage from '../../assets/images/collection.png'
+import CollectionImage from '../../../assets/images/collection.png'
 import { collections } from './constants'
 
 import './style.scss';

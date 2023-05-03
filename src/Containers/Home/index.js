@@ -1,10 +1,11 @@
 import Carousel from 'react-bootstrap/Carousel'
 import sliderImage1 from '../../assets/images/slider-image-1.png'
 import calanderIcon from '../../assets/images/calendar.svg'
-import Collection from '../../Components/Collection'
-import RaffleTickets from '../../Components/RaffleTicket'
-import RaffleState from '../../Components/RaffleState'
-import AuctionState from '../../Components/AuctionState'
+import Collection from '../../Components/Cards/Collection'
+import RaffleTickets from '../../Components/Cards/RaffleTicket'
+import RaffleState from '../../Components/Cards/RaffleState'
+import AuctionState from '../../Components/Cards/AuctionState'
+import Banner from '../../Components/Banner'
 
 import { useCountdown } from '../../hooks/useCountdown';
 
@@ -73,19 +74,14 @@ const Home = () => {
       <div className='container'>
         <h1 className='section-title text-center'>Top Collections</h1>
         <Collection />
-      </div>
-      <div className='container'>
         <h1 className='section-title text-center'>Raffle Tickets</h1>
         <RaffleTickets />
-      </div>
-      <div className='container'>
         <h1 className='section-title text-center'>Raffle State</h1>
         <RaffleState />
-      </div>
-      <div className='container'>
         <h1 className='section-title text-center'>Auctions State</h1>
         <AuctionState />
       </div>
+      <Banner />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 
 
 
-import TicketImage from '../../assets/images/ticket.png'
+import TicketImage from '../../../assets/images/ticket.png'
 import { tickets } from './constants';
 
 import './style.scss'
