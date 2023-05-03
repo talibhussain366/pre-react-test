@@ -4,10 +4,15 @@ import calanderIcon from '../../assets/images/calendar.svg'
 import Collection from '../../Components/Collection'
 import RaffleTickets from '../../Components/RaffleTicket'
 import RaffleState from '../../Components/RaffleState'
+import AuctionState from '../../Components/AuctionState'
+
+import { useCountdown } from '../../hooks/useCountdown';
 
 import './style.scss';
 
 const Home = () => {
+  const [days, hours, minutes, seconds] = useCountdown('Wed May 04 2023 20:18:02 GMT+0500');
+
   return (
     <div className="Home">
       <div className='top-header-title'>
@@ -62,20 +67,24 @@ const Home = () => {
       </div>
       <div className='timer container'>
         <p>
-          0d : 12h : 51m : 47s
+          {`${days}d : ${hours}h : ${minutes}m : ${seconds}s`}
         </p>
       </div>
-      <div className='top-collections container'>
-        <h1 className='sectiontitle text-center'>Top Collections</h1>
-        <Collection/>
+      <div className='container'>
+        <h1 className='section-title text-center'>Top Collections</h1>
+        <Collection />
       </div>
-      <div className='raffle-tickets container'>
-        <h1 className='sectiontitle text-center'>Raffle Tickets</h1>
-        <RaffleTickets/>
+      <div className='container'>
+        <h1 className='section-title text-center'>Raffle Tickets</h1>
+        <RaffleTickets />
       </div>
-      <div className='raffle-state container'>
-        <h1 className='sectiontitle text-center'>Raffle State</h1>
-        <RaffleState/>
+      <div className='container'>
+        <h1 className='section-title text-center'>Raffle State</h1>
+        <RaffleState />
+      </div>
+      <div className='container'>
+        <h1 className='section-title text-center'>Auctions State</h1>
+        <AuctionState />
       </div>
     </div>
   );

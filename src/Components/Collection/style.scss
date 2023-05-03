@@ -18,17 +18,17 @@
     box-shadow: 0px 0px 20px #00d0ff;
     border-radius: 30px;
     padding: 30px;
-    .cardHead {
+    .card-head {
       background: #0b1426;
       border-radius: 15px;
       padding: 20px;
       .contentDetail {
         margin-bottom: 15px;
-        .left {
+        .left-label {
           flex-basis: 45%;
           border-right: 2px solid #929292;
         }
-        .right {
+        .right-label {
           flex-basis: 52%;
         }
         p.title {
@@ -38,7 +38,7 @@
           color: #c4c4c4;
           margin-bottom: 10px;
         }
-        p.count {
+        p.label-value {
           font-weight: 700;
           font-size: 14px;
           line-height: 17px;
@@ -46,11 +46,11 @@
           color: #11cffa;
         }
       }
-      .cardimage {
+      .card-image {
         text-align: center;
       }
     }
-    .cardbody {
+    .card-body {
       padding: 15px 0;
       .price {
         p {
@@ -67,7 +67,7 @@
         }
       }
     }
-    .cardfooter {
+    .card-footer {
       background: #0b1426;
       border-radius: 15px;
       padding: 10px;

@@ -1,13 +1,17 @@
 import CollectionImage from '../../assets/images/collection.png'
-import { raffles } from './constants'
+import { auctions } from './constants'
+
+import { useCountdown } from '../../hooks/useCountdown';
 
 import './style.scss';
 
-const RaffleState = () => {
+const AuctionState = () => {
+  const [days, hours, minutes, seconds] = useCountdown('Wed May 04 2023 20:18:02 GMT+0500');
+
   return (
-    <div className="RaffleState">
+    <div className="AuctionState">
       <div className='row  item-row gap-4'>
-        {raffles.map((raffle, i) => (
+        {auctions.map((auction, i) => (
           <div className='col-md-4 mb-5' key={i}>
             <div className='card active'>
               <div className='card-head'>
@@ -18,16 +22,16 @@ const RaffleState = () => {
                 </div>
               </div>
               <div className='card-body'>
-                <h4 className='raffle-title'>{`Drako #${raffle.id}`}</h4>
+                <h4 className='raffle-title'>{`Drako #${auction.id}`}</h4>
                 <div className='price d-flex justify-content-between'>
-                  <p>{`${raffle.sold} sold`}</p>
-                  <p className='text-right'>{`${raffle.totalWinner} winners`}</p>
+                  <p>Current Bid:</p>
+                  <p className='text-right'>{`${auction.currentBid}$`}</p>
                 </div>
                 <hr />
               </div>
               <div className='card-footer'>
                 <div className='radio-btn'>
-                  <p><span></span>Raffle open!</p>
+                  <p><span></span>{auction.isOpen ? `Ends in: ${days}d ${hours}h ${minutes}m ${seconds}s` : 'Auction closed!'}</p>
                 </div>
                 <button className='card-btn'>View raffle</button>
               </div>
@@ -39,4 +43,4 @@ const RaffleState = () => {
   );
 }
 
-export default RaffleState;
+export default AuctionState;
