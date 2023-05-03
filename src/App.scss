@@ -1,3 +1,24 @@
 .App {
-  
+}
+body {
+    background: #0b1426;
+}
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body,
+button {
+    font-family: "Inter";
+}
+.sectiontitle{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #00d0ff;
+    text-shadow: 0px 0px 10px #11cffa;
+    margin: 50px 0;
 }
