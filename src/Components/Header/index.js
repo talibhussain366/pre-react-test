@@ -1,7 +1,9 @@
 
+import { useState } from 'react'
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { connectWallet, addEllipsis } from '../../utils/functions'
 
 import logo from '../../assets/images/logo.svg'
 import brand from '../../assets/images/brand.svg'
@@ -9,6 +11,22 @@ import brand from '../../assets/images/brand.svg'
 import './style.scss';
 
 const Header = () => {
+  const [walletAddress, setWalletAddress] = useState('')
+
+  const handleConnectWallet = async () => {
+    try {      
+      const { account, provider } = await connectWallet()
+      setWalletAddress(account)
+      provider.on('accountsChanged', (accounts) => {
+        if (accounts.length) {
+          setWalletAddress(accounts[0])
+        } else setWalletAddress('')
+      })
+    } catch (error) {
+      console.log('error', error);
+    }
+  }
+
   return (
     <div className="Header">
       <Navbar collapseOnSelect expand="lg" className='justify-content-between custom-menu'>
@@ -28,7 +46,12 @@ const Header = () => {
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <button className='connect-wallet'>Connect Wallet</button>
+          <button
+            className='connect-wallet'
+            onClick={handleConnectWallet}
+          >
+            {addEllipsis(walletAddress) || 'Connect Wallet'}
+          </button>
         </Navbar.Collapse>
       </Navbar>
     </div>
