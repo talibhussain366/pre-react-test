@@ -60,3 +60,11 @@
         url(./Inter/Inter-ExtraBold.svg#Inter-ExtraBold) format("svg"), url(./Inter/Inter-ExtraBold.woff) format("woff"),
         url(./Inter/Inter-ExtraBold.woff2) format("woff2");
 }
+@font-face {
+    font-family: 'Gill Sans Ultra';
+    src: url('./GillSans/GillSans-UltraBold.woff2') format('woff2'),
+        url('./GillSans/GillSans-UltraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

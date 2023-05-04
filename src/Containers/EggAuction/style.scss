@@ -1,0 +1,133 @@
+.EggAuction {
+    padding: 30px 35px;
+    .item-row {
+        @media (min-width: 1200px) {
+            justify-content: space-between;
+        }
+        @media (min-width: 768px) {
+            .col-md-4 {
+                flex: 0 0 auto;
+                width: 30.333333%;
+                min-width: 360px;
+            }
+        }
+    }
+    .card {
+        background: #14253d;
+        border-radius: 20px;
+        padding: 30px;
+        .card-head {
+            background: #0b1426;
+            border-radius: 15px;
+            padding: 10px 20px 15px 20px;
+            .topdescrip {
+                p:first-child {
+                    text-align: center;
+                    margin-bottom: 0;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #11cffa;
+                }
+                p:last-child {
+                    text-align: center;
+                    margin-bottom: 0;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #11cffa;
+                }
+            }
+            .card-image {
+                border-radius: 20px;
+                text-align: center;
+                margin-top: 5px;
+                img {
+                    filter: grayscale(100%);
+                    min-height: 210px;
+                }
+            }
+        }
+        .card-body {
+            padding: 0;
+
+            .price {
+                p {
+                    margin: 10px 0;
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 20px;
+                    color: #c4c4c4;
+                    &:last-child {
+                        color: #11cffa;
+                    }
+                }
+            }
+            hr {
+                border-color: #8bacda;
+                margin: 7px 0;
+            }
+        }
+        .card-footer {
+            text-align: center;
+            border-radius: 0px;
+            background: transparent;
+            border: 0px solid;
+            .radio-btn {
+                p {
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 29px;
+                    color: #8bacda;
+                    margin-bottom: 20px;
+                }
+                p.timer {
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 29px;
+                    color: #11cffa;
+                }
+            }
+            button.card-btn {
+                background: #0b1426;
+                border: 3px solid #0b1426;
+                border-radius: 15px;
+                padding: 16px 0;
+                color: #14253d;
+                width: 100%;
+                box-shadow: unset;
+                font-weight: 700;
+                font-size: 26px;
+                line-height: 32px;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: #fff;
+                color: #14253d;
+                border: 1px solid #0b1426;
+            }
+        }
+        &.active {
+            border: 5px solid #11cffa;
+            box-shadow: 0px 0px 20px #00d0ff;
+            .card-head {
+                .card-image {
+                    text-align: center;
+                    img {
+                        filter: grayscale(0%);
+                        border: 3px solid #2f4052;
+                        border-radius: 20px;
+                    }
+                }
+            }
+            .card-footer {
+                text-align: center;
+                button.card-btn {
+                    background: linear-gradient(180deg, #1199fa 0%, #11b1fa 44.57%, #11cffa 100%);
+                    border: 3px solid #ffffff;
+                    border-radius: 15px;
+                    -webkit-text-stroke-width: 1px;
+                    -webkit-text-stroke-color: #fff;
+                }
+            }
+        }
+    }
+}

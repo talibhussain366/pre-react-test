@@ -1,6 +1,13 @@
-.BurnADrako {
+.ViewEggAuction {
+    hr {
+        border-color: #11cffa;
+        border-width: 3px;
+        opacity: 1;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
     .burn-drako-summary {
-        padding: 0px 35px 60px 35px;
+        padding: 30px 35px 30px 35px;
         @media (max-width: 1009px) {
             .left-column {
                 margin-bottom: 15px;
@@ -35,48 +42,44 @@
             @media (max-width: 767px) {
                 background-size: 0%;
             }
-            h3.token-title {
-                font-weight: 700;
-                font-size: 24px;
-                line-height: 29px;
-                color: #11cffa;
-                -webkit-text-stroke-width: 1px;
-                -webkit-text-stroke-color: #fff;
-                margin-bottom: 30px;
-                word-wrap: break-word;
-            }
-            button.ShowDrakos {
-                background: #11cffa;
-                border-radius: 10px;
-                border: 1px solid #11cffa;
-                padding: 15px 35px;
-                font-weight: 700;
-                font-size: 20px;
-                line-height: 24px;
-                color: #0b1426;
-                margin-bottom: 30px;
-            }
             .card {
-                background: linear-gradient(180deg, #fa8905 0%, #e93902 100%);
-                border: 3px solid #fa7b05;
-                border-radius: 15px;
-                padding: 15px 12px;
-                margin-bottom: 15px;
-                button.burn-drako {
-                    /* margin-top: 25px; */
-                    width: 90%;
-                    background: #ffc700;
-                    border-radius: 50px;
-                    border: 1px solid #ffc700;
-                    margin: 0 auto;
-                    margin-top: 25px;
-                    padding: 10px 0;
+                border: 3px solid #11cffa;
+                border-radius: 10px;
+                overflow: hidden;
+                .drako-img {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            .detailscard {
+                padding: 10px 0;
+                p {
+                    font-style: normal;
                     font-weight: 700;
                     font-size: 20px;
                     line-height: 24px;
-                    color: #ff0d0d;
-                    -webkit-text-stroke-width: 1px;
-                    -webkit-text-stroke-color: #fff;
+                    color: #ffffff;
+                    margin-bottom: 15px;
+                }
+                h2 {
+                    font-weight: 700;
+                    font-size: 36px;
+                    line-height: 44px;
+                    color: #11cffa;
+                    text-shadow: 0px 0px 5px #11cffa;
+                    margin-bottom: 25px;
+                    word-break: break-all;
+                }
+            }
+            .description-text {
+                p {
+                    word-break: break-all;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #ffffff;
                 }
             }
         }
@@ -118,18 +121,43 @@
                             text-shadow: 0px 0px 5px #11cffa;
                         }
                     }
-                    &:last-child {
-                        p {
-                            margin-bottom: 0;
-                        }
-                    }
                 }
             }
-            hr {
-                border-color: #11cffa;
-                border-width: 3px;
-                opacity: 1;
-                margin-top: 5px;
+            .auction-info {
+                p {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #ffffff;
+                    margin-bottom: 20px;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+    .bidHistory {
+        padding: 0px 35px 90px 35px;
+        ul.bidList {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li {
+                padding: 25px 5px;
+                border-bottom: 3px solid #11cffa;
+                span {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 39px;
+                    color: #ffffff;
+                    &.right {
+                        color: #11cffa;
+                    }
+                }
+                &:first-child {
+                    border-top: 3px solid #11cffa;
+                }
             }
         }
     }

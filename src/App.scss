@@ -21,4 +21,10 @@ button {
     color: #00d0ff;
     text-shadow: 0px 0px 10px #11cffa;
     margin: 50px 0;
+    text-align: center;
+    @media (max-width: 460px){
+        padding: 0 15px;
+        font-size: 28px;
+        line-height: 34px;
+    }
 }

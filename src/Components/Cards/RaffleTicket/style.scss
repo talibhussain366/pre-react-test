@@ -48,8 +48,9 @@
       .ticket-body {
         .ticket-image {
           border-radius: 50%;
-          box-shadow: 0px 0px 30px #11cffa;
-          flex-grow: 1;
+          img {
+            width: 85%;
+          }
         }
         .bar-block {
           width: 30%;
@@ -64,10 +65,10 @@
             height: 1px;
             background-color: #11cffa;
             &.one {
-              width: 80%;
+              width: 150%;
             }
             &.two {
-              width: 90%;
+              width: 190%;
             }
           }
         }
