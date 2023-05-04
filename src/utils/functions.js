@@ -39,7 +39,7 @@ export const connectWallet = async () => {
 }
 
 /**
-* Adding ellipsis to wallet address
+* Adding ellipsis to wallet address to make address displayable according to design
 */
 export const addEllipsis = (string, characters = 4, inCenter = true) => {
     if (inCenter) {

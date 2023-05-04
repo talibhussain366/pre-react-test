@@ -17,7 +17,11 @@ const Header = () => {
     try {      
       const { account, provider } = await connectWallet()
       setWalletAddress(account)
-      provider.on('accountsChanged', (accounts) => setWalletAddress(accounts[0]))
+      provider.on('accountsChanged', (accounts) => {
+        if (accounts.length) {
+          setWalletAddress(accounts[0])
+        } else setWalletAddress('')
+      })
     } catch (error) {
       console.log('error', error);
     }

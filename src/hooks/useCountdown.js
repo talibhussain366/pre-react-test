@@ -1,5 +1,9 @@
 import { useEffect, useState } from 'react';
 
+/**
+* Getting total remaining time from a specific given time
+* @param {string} targetDate datetime string which is deadline for specific event
+*/
 const useCountdown = (targetDate) => {
   const countDownDate = new Date(targetDate).getTime();
 
@@ -18,8 +22,11 @@ const useCountdown = (targetDate) => {
   return getReturnValues(countDown);
 };
 
+/**
+* Calculate time left
+* @param {string} countDown calculated time difference from deadline
+*/
 const getReturnValues = (countDown) => {
-  // calculate time left
   const days = Math.floor(countDown / (1000 * 60 * 60 * 24));
   const hours = Math.floor(
     (countDown % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
