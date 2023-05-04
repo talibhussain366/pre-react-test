@@ -54,6 +54,9 @@
             }
             .detailscard {
                 padding: 10px 0;
+                @media (max-width: 767px) {
+                    margin-top: 20px;
+                }
                 p {
                     font-style: normal;
                     font-weight: 700;
@@ -70,6 +73,10 @@
                     text-shadow: 0px 0px 5px #11cffa;
                     margin-bottom: 25px;
                     word-break: break-all;
+                    @media (max-width: 566px) {
+                        font-size: 26px;
+                        line-height: 34px;
+                    }
                 }
             }
             .description-text {
@@ -80,6 +87,10 @@
                     font-size: 20px;
                     line-height: 24px;
                     color: #ffffff;
+                    @media (max-width: 566px) {
+                        font-weight: 400;
+                        font-size: 18px;
+                    }
                 }
             }
         }
@@ -119,6 +130,10 @@
                             line-height: 44px;
                             color: #11cffa;
                             text-shadow: 0px 0px 5px #11cffa;
+                            @media (max-width: 566px) {
+                                font-size: 26px;
+                                line-height: 30px;
+                            }
                         }
                     }
                 }
@@ -145,12 +160,20 @@
             li {
                 padding: 25px 5px;
                 border-bottom: 3px solid #11cffa;
+                @media (max-width: 566px) {
+                    flex-direction: column;
+                }
                 span {
                     font-style: normal;
                     font-weight: 700;
                     font-size: 32px;
                     line-height: 39px;
                     color: #ffffff;
+                    @media (max-width: 700px) {
+                        font-size: 24px;
+                        line-height: 28px;
+                    }
+
                     &.right {
                         color: #11cffa;
                     }

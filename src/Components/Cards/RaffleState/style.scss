@@ -4,6 +4,9 @@
     @media (min-width: 1200px) {
       justify-content: space-between;
     }
+    @media (max-width: 1199px) {
+      justify-content: center;
+    }
     @media (min-width: 768px) {
       .col-md-4 {
         flex: 0 0 auto;

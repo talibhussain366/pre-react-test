@@ -14,7 +14,7 @@ const Header = () => {
   const [walletAddress, setWalletAddress] = useState('')
 
   const handleConnectWallet = async () => {
-    try {      
+    try {
       const { account, provider } = await connectWallet()
       setWalletAddress(account)
       provider.on('accountsChanged', (accounts) => {
@@ -29,7 +29,7 @@ const Header = () => {
 
   return (
     <div className="Header">
-      <Navbar collapseOnSelect expand="lg" className='justify-content-between custom-menu'>
+      <Navbar collapseOnSelect expand="xl" className='justify-content-between custom-menu'>
         <Navbar.Brand href="" className='flex-grow-1'>
           <div className='d-flex gap-3'>
             <img src={logo} className='img-fluid' width={50} alt='logo' />

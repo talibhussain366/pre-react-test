@@ -21,7 +21,7 @@ const BurnADrako = () => {
                 <div className='col-md-4'>
                   <div className='card'>
                     <div className='drako-img text-center'>
-                      <img src={DrakoImage} alt='drako-image' width={225} height={200} className='img-fluid w-100' />
+                      <img src={DrakoImage} alt='drako' width={225} height={200} className='img-fluid w-100' />
                     </div>
                     <button className='burn-drako'>Burn Drako</button>
                   </div>
@@ -29,7 +29,7 @@ const BurnADrako = () => {
                 <div className='col-md-4'>
                   <div className='card'>
                     <div className='drako-img text-center'>
-                      <img src={DrakoImage} alt='drako-image' width={225} height={200} className='img-fluid w-100' />
+                      <img src={DrakoImage} alt='drako' width={225} height={200} className='img-fluid w-100' />
                     </div>
                     <button className='burn-drako'>Burn Drako</button>
                   </div>
@@ -37,7 +37,7 @@ const BurnADrako = () => {
                 <div className='col-md-4'>
                   <div className='card'>
                     <div className='drako-img text-center'>
-                      <img src={DrakoImage} alt='drako-image' width={225} height={200} className='img-fluid w-100' />
+                      <img src={DrakoImage} alt='drako' width={225} height={200} className='img-fluid w-100' />
                     </div>
                     <button className='burn-drako'>Burn Drako</button>
                   </div>

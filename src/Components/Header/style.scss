@@ -4,12 +4,13 @@
   padding: 0 35px;
 
   .custom-menu {
-    .navbar-toggler{
+    .navbar-toggler {
       border: 1px solid #00d0ff;
-      .navbar-toggler-icon{
-        background-image: url("../../assets//images/bars-solid.svg")
+      .navbar-toggler-icon {
+        background-image: url("../../assets//images/bars-solid.svg");
       }
     }
+
     .connect-wallet {
       font-style: normal;
       font-weight: 600;

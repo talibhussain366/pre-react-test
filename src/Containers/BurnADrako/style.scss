@@ -116,6 +116,10 @@
                             line-height: 44px;
                             color: #11cffa;
                             text-shadow: 0px 0px 5px #11cffa;
+                            @media (max-width: 566px) {
+                                font-size: 26px;
+                                line-height: 30px;
+                            }
                         }
                     }
                     &:last-child {
