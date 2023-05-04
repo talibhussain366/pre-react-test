@@ -9,7 +9,7 @@ const RaffleState = () => {
       <div className='row  item-row gap-4'>
         {raffles.map((raffle, i) => (
           <div className='col-md-4 mb-5' key={i}>
-            <div className='card active'>
+            <div className={`card ${raffle.isOpen ? 'active' : ''}`}>
               <div className='card-head'>
                 <div className='contentDetail'>
                   <div className='card-image'>

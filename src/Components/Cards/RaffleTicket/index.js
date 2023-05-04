@@ -1,7 +1,7 @@
 
 
 
-import TicketImage from '../../../assets/images/ticket.png'
+import eggToken from '../../../assets/images/egg-token.png'
 import { tickets } from './constants';
 
 import './style.scss'
@@ -21,8 +21,8 @@ const RaffleTicket = () => {
                 <hr className='two'></hr>
                 <hr className='one'></hr>
               </div>
-              <div className='ticket-image'>
-                <img src={TicketImage} alt='Ticket' className='img-fluid' />
+              <div className='ticket-image text-center'>
+                <img src={eggToken} alt='Ticket' className='img-fluid' />
               </div>
               <div className='bar-block align-items-end'>
                 <hr className='one'></hr>

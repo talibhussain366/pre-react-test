@@ -7,7 +7,7 @@
     @media (min-width: 768px) {
       .col-md-4 {
         flex: 0 0 auto;
-        width: 30.333333%;
+        width: 31.333333%;
         min-width: 360px;
       }
     }
@@ -24,12 +24,13 @@
       padding: 20px;
       .contentDetail {
         margin-bottom: 15px;
+        text-align: center;
         .left-label {
-          flex-basis: 45%;
+          flex-basis: 49%;
           border-right: 2px solid #929292;
         }
         .right-label {
-          flex-basis: 52%;
+          flex-basis: 49%;
         }
         p.title {
           font-weight: 400;
@@ -56,13 +57,13 @@
         p {
           font-style: normal;
           font-weight: 400;
-          font-size: 20px;
+          font-size: 18px;
           line-height: 24px;
           color: #c4c4c4;
           margin-bottom: 0;
           span {
             color: #ffffff;
-            font-weight: 700;
+            font-weight: 600;
           }
         }
       }

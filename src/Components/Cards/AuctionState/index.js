@@ -13,7 +13,7 @@ const AuctionState = () => {
       <div className='row  item-row gap-4'>
         {auctions.map((auction, i) => (
           <div className='col-md-4 mb-5' key={i}>
-            <div className='card active'>
+            <div className={`card ${auction.isOpen ? 'active' : ''}`}>
               <div className='card-head'>
                 <div className='contentDetail'>
                   <div className='card-image'>
