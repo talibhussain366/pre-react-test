@@ -7,7 +7,7 @@ import RaffleState from '../../Components/Cards/RaffleState'
 import AuctionState from '../../Components/Cards/AuctionState'
 import Banner from '../../Components/Banner'
 
-import { useCountdown } from '../../hooks/useCountdown';
+import { useCountdown } from '../../hooks/useCountdown'
 
 import './style.scss';
 
