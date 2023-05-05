@@ -42,8 +42,8 @@ const Header = () => {
         <Navbar.Collapse id="responsive-navbar-nav" className='justify-content-end'>
           <Nav className="">
             <Nav.Link href="/burn-a-drako">Burn a Drako</Nav.Link>
-            <Nav.Link href="/raffle-tickets">$Egg Auction</Nav.Link>
-            <Nav.Link href="/egg-auction">Raffle Tickets</Nav.Link>
+            <Nav.Link href="/egg-auction">$Egg Auction</Nav.Link>
+            <Nav.Link href="/raffle-tickets">Raffle Tickets</Nav.Link>
             <NavDropdown title="P2P Trading" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
             </NavDropdown>

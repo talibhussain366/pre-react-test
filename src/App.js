@@ -24,8 +24,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/burn-a-drako" element={<BurnDrako />} />
-            <Route path="/raffle-tickets" element={<EggAuction />} />
-            <Route path="/egg-auction" element={<ViewEggAuction />} />
+            <Route path="/raffle-tickets" element={<ViewEggAuction />} />
+            <Route path="/egg-auction" element={<EggAuction />} />
           </Routes>
         </div>
         <Footer />
