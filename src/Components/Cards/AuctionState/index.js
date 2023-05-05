@@ -6,7 +6,7 @@ import { useCountdown } from '../../../hooks/useCountdown';
 import './style.scss';
 
 const AuctionState = () => {
-  const [days, hours, minutes, seconds] = useCountdown('Wed May 04 2023 20:18:02 GMT+0500');
+  const [days, hours, minutes, seconds] = useCountdown('Wed May 08 2023 20:18:02 GMT+0500');
 
   return (
     <div className="AuctionState">

@@ -31,17 +31,19 @@ const Header = () => {
     <div className="Header">
       <Navbar collapseOnSelect expand="xl" className='justify-content-between custom-menu'>
         <Navbar.Brand href="" className='flex-grow-1'>
+        <Nav.Link href="/">
           <div className='d-flex gap-3'>
             <img src={logo} className='img-fluid' width={50} alt='logo' />
             <img src={brand} className='img-fluid' alt='brand' />
           </div>
+        </Nav.Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className='justify-content-end'>
           <Nav className="">
-            <Nav.Link href="#">Burn a Drako</Nav.Link>
-            <Nav.Link href="#">$Egg Auction</Nav.Link>
-            <Nav.Link href="#">Raffle Tickets</Nav.Link>
+            <Nav.Link href="/burn-a-drako">Burn a Drako</Nav.Link>
+            <Nav.Link href="/raffle-tickets">$Egg Auction</Nav.Link>
+            <Nav.Link href="/egg-auction">Raffle Tickets</Nav.Link>
             <NavDropdown title="P2P Trading" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
             </NavDropdown>

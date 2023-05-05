@@ -3,9 +3,9 @@ import DrakoImage from '../../assets/images/burn-drako.png'
 
 import './style.scss'
 
-const BurnADrako = () => {
+const BurnDrako = () => {
   return (
-    <div className="BurnADrako">
+    <div className="BurnDrako">
       <h4 className='section-title'>
         Burn  Drako NFTs and Get $EGG Back!
       </h4>
@@ -51,19 +51,19 @@ const BurnADrako = () => {
                 <h1 className='list-title text-center'>User Info</h1>
                 <ul className='info-list'>
                   <li><p className='d-flex justify-content-between align-items-center'><span className='left'>Your Balance :</span><span className='right'>10,023</span></p></li>
-                  <li><p className='d-flex justify-content-between align-items-center'><span className='left'>Your Balance :</span><span className='right'>10,023</span></p></li>
+                  <li><p className='d-flex justify-content-between align-items-center'><span className='left'>Total Drakos Burned : </span><span className='right'>100</span></p></li>
                 </ul>
                 <hr />
               </div>
               <div className='burn-info'>
-                <h1 className='list-title text-center'>User Info</h1>
+                <h1 className='list-title text-center'>Burn  Info</h1>
                 <ul className='info-list'>
-                  <li><p className='d-flex justify-content-between align-items-center'><span className='left'>Your Balance :</span><span className='right'>10,023</span></p></li>
-                  <li><p className='d-flex justify-content-between align-items-center'><span className='left'>Your Balance :</span><span className='right'>10,023</span></p></li>
-                  <li><p className='d-flex justify-content-between align-items-center'><span className='left'>Your Balance :</span><span className='right'>10,023</span></p></li>
-                  <li><p className='d-flex justify-content-between align-items-center'><span className='left'>Your Balance :</span><span className='right'>10,023</span></p></li>
-                  <li><p className='d-flex justify-content-between align-items-center'><span className='left'>Your Balance :</span><span className='right'>10,023</span></p></li>
-                  <li><p className='d-flex justify-content-between align-items-center'><span className='left'>Your Balance :</span><span className='right'>10,023</span></p></li>
+                  <li><p className='d-flex justify-content-between align-items-center'><span className='left'>1 OF 1  =</span><span className='right'>3,000 $EGG</span></p></li>
+                  <li><p className='d-flex justify-content-between align-items-center'><span className='left'>LEGENDARY =</span><span className='right'>1,500 $EGG</span></p></li>
+                  <li><p className='d-flex justify-content-between align-items-center'><span className='left'>EPIC =</span><span className='right'>1,200 $EGG</span></p></li>
+                  <li><p className='d-flex justify-content-between align-items-center'><span className='left'>RARE =</span><span className='right'>900 $EGG</span></p></li>
+                  <li><p className='d-flex justify-content-between align-items-center'><span className='left'>UNCOMMON = </span><span className='right'>600 $EGG</span></p></li>
+                  <li><p className='d-flex justify-content-between align-items-center'><span className='left'>COMMON =</span><span className='right'>300 $EGG</span></p></li>
                 </ul>
               </div>
             </div>
@@ -75,4 +75,4 @@ const BurnADrako = () => {
   );
 }
 
-export default BurnADrako;
+export default BurnDrako;
