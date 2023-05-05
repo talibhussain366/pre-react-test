@@ -1,0 +1,95 @@
+.Collection {
+  padding: 30px 0px;
+  .item-row {
+    @media (min-width: 1200px) {
+      justify-content: space-between;
+    }
+    @media (max-width: 1199px) {
+      justify-content: center;
+    }
+    @media (min-width: 768px) {
+      .col-md-4 {
+        flex: 0 0 auto;
+        width: 31.333333%;
+        min-width: 360px;
+      }
+    }
+  }
+  .card {
+    background: #14253d;
+    border: 5px solid #11cffa;
+    box-shadow: 0px 0px 20px #00d0ff;
+    border-radius: 30px;
+    padding: 30px;
+    .card-head {
+      background: #0b1426;
+      border-radius: 15px;
+      padding: 20px;
+      .contentDetail {
+        margin-bottom: 15px;
+        text-align: center;
+        .left-label {
+          flex-basis: 49%;
+          border-right: 2px solid #929292;
+        }
+        .right-label {
+          flex-basis: 49%;
+        }
+        p.title {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          color: #c4c4c4;
+          margin-bottom: 10px;
+        }
+        p.label-value {
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 17px;
+          margin-bottom: 0;
+          color: #11cffa;
+        }
+      }
+      .card-image {
+        text-align: center;
+      }
+    }
+    .card-body {
+      padding: 15px 0;
+      .price {
+        p {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 24px;
+          color: #c4c4c4;
+          margin-bottom: 0;
+          span {
+            color: #ffffff;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    .card-footer {
+      background: #0b1426;
+      border-radius: 15px;
+      padding: 10px;
+      text-align: center;
+      p.prodTitle {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #11cffa;
+        margin-bottom: 15px;
+      }
+      p.collection-tag-line {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #11cffa;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

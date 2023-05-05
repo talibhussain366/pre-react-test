@@ -1,0 +1,127 @@
+.AuctionState {
+  padding: 30px 0px;
+  .item-row {
+    @media (min-width: 1200px) {
+      justify-content: space-between;
+    }
+    @media (max-width: 1199px) {
+      justify-content: center;
+    }
+    @media (min-width: 768px) {
+      .col-md-4 {
+        flex: 0 0 auto;
+        width: 30.333333%;
+        min-width: 360px;
+      }
+    }
+  }
+  .card {
+    background: #14253d;
+    border-radius: 20px;
+    padding: 30px;
+    .card-head {
+      .card-image {
+        border: 3px solid #2f4052;
+        border-radius: 20px;
+        text-align: center;
+        img {
+          filter: grayscale(100%);
+        }
+      }
+    }
+    .card-body {
+      padding: 0;
+      .raffle-title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+
+        color: #ffffff;
+        text-align: center;
+        margin: 5px 0;
+      }
+      .price {
+        p {
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 29px;
+          color: #8bacda;
+          margin-bottom: 0;
+        }
+      }
+      hr {
+        border-color: #8bacda;
+        margin: 7px 0;
+      }
+    }
+    .card-footer {
+      text-align: center;
+      .radio-btn {
+        p {
+          font-weight: 300;
+          font-size: 18px;
+          line-height: 29px;
+          color: #2f4052;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          span {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #2f4052;
+            margin-right: 7px;
+          }
+        }
+      }
+      button.card-btn {
+        background: #8bacda;
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        padding: 16px 45px;
+        box-shadow: unset;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        color: #14253d;
+
+        border: 1px solid #0b1426;
+      }
+    }
+    &.active {
+      box-shadow: 0px 0px 10px #00d0ff;
+      .card-head {
+        .card-image {
+          border: 3px solid #2f4052;
+          border-radius: 20px;
+          text-align: center;
+          img {
+            filter: grayscale(0%);
+          }
+        }
+      }
+      .card-footer {
+        text-align: center;
+        .radio-btn {
+          p {
+            color: #00d0ff;
+            gap: 10px;
+            span {
+              background-color: #00d0ff;
+            }
+          }
+        }
+        button.card-btn {
+          background: #00d0ff;
+          color: #14253d;
+          border: 1px solid #00d0ff;
+          -webkit-text-stroke-width: 0px;
+          -webkit-text-stroke-color: transparent;
+        }
+      }
+    }
+  }
+}
